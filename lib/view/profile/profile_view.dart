@@ -18,7 +18,6 @@ class _ProfileViewState extends State<ProfileView> {
 
   List accountArr = [
     {"image": "assets/img/p_personal.png", "name": "Personal Data", "tag": "1"},
-    {"image": "assets/img/p_achi.png", "name": "Achievement", "tag": "2"},
     {
       "image": "assets/img/p_activity.png",
       "name": "Activity History",
@@ -26,7 +25,7 @@ class _ProfileViewState extends State<ProfileView> {
     },
     {
       "image": "assets/img/p_workout.png",
-      "name": "Workout Progress",
+      "name": "Appointment History",
       "tag": "4"
     }
   ];
@@ -96,7 +95,7 @@ class _ProfileViewState extends State<ProfileView> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Stefani Wong",
+                          "Poonguzhali",
                           style: TextStyle(
                             color: TColor.black,
                             fontSize: 14,
@@ -104,7 +103,7 @@ class _ProfileViewState extends State<ProfileView> {
                           ),
                         ),
                         Text(
-                          "Lose a Fat Program",
+                          "Second Trimester",
                           style: TextStyle(
                             color: TColor.gray,
                             fontSize: 12,
@@ -140,7 +139,7 @@ class _ProfileViewState extends State<ProfileView> {
                 children: [
                   Expanded(
                     child: TitleSubtitleCell(
-                      title: "180cm",
+                      title: "157cm",
                       subtitle: "Height",
                     ),
                   ),
@@ -158,7 +157,7 @@ class _ProfileViewState extends State<ProfileView> {
                   ),
                   Expanded(
                     child: TitleSubtitleCell(
-                      title: "22yo",
+                      title: "26yo",
                       subtitle: "Age",
                     ),
                   ),

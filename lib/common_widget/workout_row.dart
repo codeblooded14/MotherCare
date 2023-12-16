@@ -9,6 +9,7 @@ class WorkoutRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
+    print(wObj["progress"]);
     return Container(
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 2),
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
@@ -40,13 +41,6 @@ class WorkoutRow extends StatelessWidget {
                       fontSize: 12),
                 ),
 
-                Text(
-                  "${ wObj["kcal"].toString() } Calories Burn | ${wObj["time"].toString()}minutes",
-                  style: TextStyle(
-                      color: TColor.gray,
-                      fontSize: 10,),
-                ),
-
                const SizedBox(height: 4,),
 
                 SimpleAnimationProgressBar(
@@ -67,15 +61,12 @@ class WorkoutRow extends StatelessWidget {
 
               ],
             )),
-            IconButton(
+            Container(
+              child:  wObj["progress"] == 1.0 ? IconButton(
                 onPressed: () {},
-                icon: Image.asset(
-                  "assets/img/next_icon.png",
-                  width: 30,
-                  height: 30,
-                  fit: BoxFit.contain,
-                ))
-          ],
+                icon: const Icon(Icons.check,color: Colors.green,)
+            ) : null,
+        )],
         ));
   }
 }
