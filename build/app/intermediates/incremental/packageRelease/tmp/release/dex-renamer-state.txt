@@ -1,0 +1,4 @@
+#Fri Dec 15 19:20:16 IST 2023
+base.0=D\:\\web dev\\fitness_workout_app_flutter_3_ui\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
